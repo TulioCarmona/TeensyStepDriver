@@ -51,7 +51,7 @@ lib_deps  = luni64/TeensyTimerTool
 
 ### Constructor
 ```cpp
-StepMotor(uint8_t stepPin, uint8_t dirPin, bool invertDir = false);
+StepMotor(uint8_t stepPin, uint8_t dirPin, TimerGenerator periodicTmr, TimerGenerator oneshotTmr, bool invertDir = false);
 ```
 
 ### Initialisation
