@@ -29,10 +29,12 @@
 	  _pulseTimer(pulseTimerType)
 {}*/
 
-StepMotor::StepMotor(uint8_t stepPin, uint8_t dirPin, bool invertDir)
+StepMotor::StepMotor(uint8_t stepPin, uint8_t dirPin, TimerGenerator periodicTmr, TimerGenerator oneshotTmr, bool invertDir)
 	: _stepPin(stepPin),
 	  _dirPin(dirPin),
-	  _invertDir(invertDir)
+	  _invertDir(invertDir),
+	  _stepTimer(periodicTmr),
+	  _pulseTimer(oneshotTmr)
 {}
 
 //----Helper
