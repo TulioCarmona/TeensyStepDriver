@@ -1,0 +1,18 @@
+# Syntax coloring for TeensyStepDriver
+
+# Classes
+StepMotor	KEYWORD1
+
+# Methods
+begin	KEYWORD2
+setMaxSpeed	KEYWORD2
+setAccel	KEYWORD2
+moveTo	KEYWORD2
+moveRelative	KEYWORD2
+runSpeed	KEYWORD2
+stop	KEYWORD2
+forceStop	KEYWORD2
+isRunning	KEYWORD2
+currentPosition	KEYWORD2
+targetPosition	KEYWORD2
+setCurrentPosition	KEYWORD2
