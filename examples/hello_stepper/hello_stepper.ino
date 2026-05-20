@@ -1,6 +1,6 @@
 #include "TeensyStepDriver.h"
 
-StepMotor motor(2, 3);   // STEP=pin2, DIR=pin3
+StepMotor motor(2, 3, TMR1, TMR1);   // STEP=pin2, DIR=pin3, TMR1 chanel 1, TMR1 chanel 2 (automatic asignation)
 
 void setup() {
     motor.begin();
