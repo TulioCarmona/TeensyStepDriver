@@ -62,7 +62,7 @@ public:
 	*/
 	/*explicit StepMotor(uint8_t stepPin, uint8_t dirPin, TimerType stepTimerType,
 							 TimerType pulseTimerType, bool invertDir = false); // explicit: avoids accidental or confusing conversions.*/
-	explicit StepMotor(uint8_t stepPin, uint8_t dirPin, bool invertDir = false); // explicit: avoids accidental or confusing conversions.
+	explicit StepMotor(uint8_t stepPin, uint8_t dirPin, TimerGenerator periodicTmr, TimerGenerator oneshotTmr, bool invertDir = false); // explicit: avoids accidental or confusing conversions.
 
 	void begin();
 	void setMaxSpeed(float stepsPerSec);
