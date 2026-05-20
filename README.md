@@ -41,9 +41,9 @@ lib_deps  = luni64/TeensyTimerTool
 
 ## Installation
 
-1. Download / clone this repository.
-2. Copy the `TeensyStepDriver` folder into your Arduino `libraries/` directory.
-3. Restart the Arduino IDE.
+1. Download `TeensyStepDriver.zip` from releases.
+2. Install via Arduino IDE. Sketch -> Include Library -> Add .ZIP Library...
+3. Select the downloaded file.
 
 ---
 
