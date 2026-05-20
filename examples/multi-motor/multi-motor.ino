@@ -1,8 +1,8 @@
 #include "TeensyStepDriver.h"
 
-StepMotor motor1(2, 3);
-StepMotor motor2(4, 5);
-StepMotor motor3(6, 7);
+StepMotor motor1(2, 3, TMR1, TMR1, true);
+StepMotor motor2(4, 5, TMR2, TMR2);
+StepMotor motor3(6, 7, TMR3, TMR3);
 
 void setup() {
     motor1.begin();  motor1.setMaxSpeed(3200); motor1.setAcceleration(6400);
