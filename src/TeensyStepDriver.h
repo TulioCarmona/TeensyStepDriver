@@ -35,7 +35,7 @@ using namespace TeensyTimerTool;
 //-----Tuneable constants
 /* Minimum step-timer period in µs → maximum step frequency.
    40 µs = 25 000 steps/s. Reduce only if your driver datasheet allows it.*/
-static constexpr uint32_t MIN_PERIOD_US = 40;
+static constexpr uint32_t MIN_PERIOD_US = 14;
 
 /* Step pulse high-time in µs
    3 µs satisfies A4988 (1 µs min), DRV8825 (1.9 µs min), TMC22xx (≥100 ns).*/
