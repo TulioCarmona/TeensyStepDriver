@@ -161,7 +161,10 @@ void StepMotor::_startMove(){
 	}*/
 
 	if(!_running){
-		_currentSpeed = forward ? MIN_SPEED_SPS : -MIN_SPEED_SPS;
+		// First pulse after the time needed to accelerate through one step.
+        // Original 1 step/s seed delayed every cold move by a full second.
+        const float startSpeed = fminf(_maxSpeed, fmaxf(MIN_SPEED_SPS, sqrtf(0.5f*_accel)));
+        _currentSpeed = forward ? startSpeed : -startSpeed;
 		_running = true;
 		_stepTimer.setPeriod(speed2Period_us(fabsf(_currentSpeed)));
 		_stepTimer.start();
